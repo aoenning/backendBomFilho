@@ -4,22 +4,26 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "start": "nodemon src/server.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
+    "brew": "^0.0.8",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "e": "^0.2.1",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "install": "^0.13.0",
     "js": "^0.1.0",
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.12",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
+    "postgresql": "^0.0.1",
     "sequelize": "^6.6.5",
+    "start": "^5.1.0",
     "sucrase": "^3.20.1",
     "typeorm": "^0.2.38",
     "yup": "^0.32.9"
