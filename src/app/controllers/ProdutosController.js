@@ -1,6 +1,5 @@
 import { Field } from 'pg-protocol/dist/messages';
 import * as Yup from 'yup';
-import { password } from '../../config/database';
 import Produtos from '../model/Produtos';
 
 
