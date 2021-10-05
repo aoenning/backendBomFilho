@@ -4,7 +4,7 @@ const sequelize = require("sequelize");
 
 
 //Criar migrations.
-//yarn sequelize migration:create --name=create-usuarios
+//yarn sequelize migration:create --name=create-users
 
 
 //Rodar a migration.
