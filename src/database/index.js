@@ -5,7 +5,10 @@ import Clientes from '../app/models/Clientes';
 import Produtos from '../app/models/Produtos';
 import Vendedores from '../app/models/Vendedores';
 
+
 const models = [User, Clientes, Produtos, Vendedores];
+
+const port = process.env.PORT || 3333;
 
 class Database {
     constructor() {
@@ -13,7 +16,12 @@ class Database {
     }
 
     init() {
-        this.connection = new Sequelize(databaseConfig);
+        if(port){
+            this.connection = new Sequelize(databaseConfig);
+        }else{
+            this.connection = new Sequelize(process.env.DATABASE_URL);
+        }
+        
         models.map(model => model.init(this.connection));
     }
 }
