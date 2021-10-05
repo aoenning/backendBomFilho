@@ -1,3 +1,4 @@
+
 module.exports = {
     dialect: 'postgres', //'postgres',
     host: 'localhost',
@@ -12,7 +13,5 @@ module.exports = {
     }
 }
 
-// module.exports = {
-//     DATABASE_URL = process.env.DATABASE_URL
-// }
+
 

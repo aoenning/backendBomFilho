@@ -1,6 +1,6 @@
 import { Field } from 'pg-protocol/dist/messages';
 import * as Yup from 'yup';
-import User from '../model/User';
+import User from '../models/User';
 
 
 class UserController {
